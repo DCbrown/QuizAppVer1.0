@@ -1,0 +1,116 @@
+[
+   {
+		"question" : "In Sonic 2 after finding all the Chaos Emeralds exactly how many rings do you need go Super Sonic?",
+       "answers"  : [
+	       {"id" : 0, "text" : "100"},
+			{"id" : 1, "text" : "40"},
+			{"id" : 2, "text" : "50"},
+			{"id" : 3, "text" : "60"},
+			{"id" : 4, "text" : "45"}       
+	    ],
+		"correct"  : 2
+   },
+   {
+		"question" : "Which of the following games did ''Treasure'' developed?",
+		"answers"  : [
+			{"id" : 0, "text" : "Sonic Blastman"},
+			{"id" : 1, "text" : "Gunstar Heroes"},
+			{"id" : 2, "text" : "Streets of Rage"},
+			{"id" : 3, "text" : "Contra"},
+			{"id" : 4, "text" : "Grandia 2"}
+		],
+		"correct"  : 1
+	},
+	{
+		"question" : "What is the first game that ''Game Freak'' developed?",
+		"answers"  : [
+			{"id" : 0, "text" : "Mendel Palace"},
+			{"id" : 1, "text" : "Pokemon"},
+			{"id" : 2, "text" : "Pulseman"},
+			{"id" : 3, "text" : "Yoshi"},
+			{"id" : 4, "text" : "Sin and Punishment"}
+		],
+		"correct"  : 0
+	},
+	{
+		"question" : "What game is this message from? ''It's dangerous to go alone take this.''",
+		"answers"  : [
+			{"id" : 0, "text" : "Resident Evil"},
+			{"id" : 1, "text" : "Halo"},
+			{"id" : 2, "text" : "Super Mario RPG"},
+			{"id" : 3, "text" : "Chrono Trigger"},
+			{"id" : 4, "text" : "Legend of Zelda"}
+		],
+		"correct"  : 4
+	},
+	{
+		"question" : "In the Castlvania Series, What game did Alcucard first become a playable character?",
+		"answers"  : [
+			{"id" : 0, "text" : "Castlvania The Dracula X Chronicles"},
+			{"id" : 1, "text" : "Castlevania III Dracula's Curse"},
+			{"id" : 2, "text" : "Castlevania Symphony of the Night"},
+			{"id" : 3, "text" : "Castlevania Aria of Sorrow"},
+			{"id" : 4, "text" : "Castlvania Legends"}
+		],
+		"correct"  : 1
+	},
+	{
+		"question" : "Who is the voice actor for Solid Snake in Metal Gear Solid?",
+		"answers"  : [
+			{"id" : 0, "text" : "Sonny Stright"},
+			{"id" : 1, "text" : "David Hayter"},
+			{"id" : 2, "text" : "Roger Craig Smith"},
+			{"id" : 3, "text" : "Greg Cipes"},
+			{"id" : 4, "text" : "Crispin Freeman"}
+		],
+		"correct"  : 1
+	},
+	{
+		"question" : "What is the name of the main villain of Final Fantasy 6?",
+		"answers"  : [
+			{"id" : 0, "text" : "X Death"},
+			{"id" : 1, "text" : "Cloud of Darkness"},
+			{"id" : 2, "text" : "Golbez"},
+			{"id" : 3, "text" : "Chaos"},
+			{"id" : 4, "text" : "Kefka"}
+		],
+		"correct"  : 4
+	},
+	{
+		"question" : "In Earthbound what Character learns PSI fire at level 3?",
+		"answers"  : [
+			{"id" : 0, "text" : "Ness"},
+			{"id" : 1, "text" : "Paula"},
+			{"id" : 2, "text" : "Lucas"},
+			{"id" : 3, "text" : "Kumatora"},
+			{"id" : 4, "text" : "Poo"}
+		],
+		"correct"  : 1
+	},
+	{
+		"question" : "In Megaman X after finding all the upgrades and boss weapons who's stage can you select to acquire the Hadouken technique?",
+		"answers"  : [
+			{"id" : 0, "text" : "Storm Eagle"},
+			{"id" : 1, "text" : "Gravity Beatle"},
+			{"id" : 2, "text" : "Chill Penguin"},
+			{"id" : 3, "text" : "Armored Armadillo"},
+			{"id" : 4, "text" : "None of the above"}
+		],
+		"correct"  : 3
+	},
+	{
+		"question" : "What Mario game did the Tanooki suit made it's first appearance?",
+		"answers"  : [
+			{"id" : 0, "text" : "Super Mario Bros. 3"},
+			{"id" : 1, "text" : "Super Mario World"},
+			{"id" : 2, "text" : "Super Mario Land"},
+			{"id" : 3, "text" : "Super Mario RPG"},
+			{"id" : 4, "text" : "Mario Kart"}
+		],
+		"correct"  : 0
+	}
+]
+
+
+
+

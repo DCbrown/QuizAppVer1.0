@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html ng-app="vgQuiz">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Video Game Quiz</title>
+		<link rel="stylesheet" type="text/css" href="css/quiz.min.css">
+	</head>
+	<body>
+
+		<div id="vgQuiz" ng-controller="QuizController">
+			
+			<h1>Video Game Quiz</h1>
+
+			<div class="progress">
+				<div
+					class="{{ ($index === activeQuestion) ? 'on' : 'off' }}
+					{{ (myQuestion.questionState === 'answered') ? 'answered' : 'unanswered' }}
+					{{ (myQuestion.correctness === 'correct') ? 'correct' : 'incorrect' }}"
+					ng-repeat="myQuestion in myQuestions"></div>
+			</div>
+
+			<div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
+				<h2>Welcome</h2>
+				<p>Click begin to test your knowledge on Classic Video Games.</p>
+				<p class="btn" ng-click="activeQuestion = 0">Start</p>
+			</div>
+
+			<div class="question
+				{{ ( $index === activeQuestion) ? 'active' : 'inactive' }}
+				{{ ( myQuestion.questionState === 'answered') ? 'answered' : 'unanswered' }}"
+				ng-repeat="myQuestion in myQuestions">
+			
+				<p>{{questionState}}</p>
+				<p class="txt">{{myQuestion.question}}</p>
+				<p class="ans"
+					ng-repeat="Answer in myQuestions[$index].answers"
+					ng-click="selectAnswer($parent.$index,$index)"
+					ng-class="{
+						selected:isSelected($parent.$index,$index),
+						correct:isCorrect($parent.$index,$index)}"
+					>{{Answer.text}}</p>
+
+				<div class="feedback">
+					<p ng-show="myQuestion.correctness == 'correct'">You are <strong>correct</strong>.</p>
+					<p ng-show="myQuestion.correctness == 'incorrect'">Oops! that is not correct.</p>
+					<div class="btn" ng-click="selectContinue()">Continue</div>
+				</div>
+
+			</div>
+
+			<div class="results {{ (totalQuestions === activeQuestion) ? 'active' : 'inactive' }}">
+				<h3>Your results:</h3>
+				<p>You scored {{score}} of the total {{totalQuestions}} questions.</p>
+				<p>Use the links below to challenge your friends.</p>
+				<div class="share" ng-bind-html="createShareLinks(percentage)">s</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/quiz.min.js"></script>
+
+	</body>
+</html>
